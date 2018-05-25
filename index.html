@@ -1,0 +1,344 @@
+<!doctype html>
+<html style="font-size: 110%!important;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="telephone=no" name="format-detection">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>导航吸顶滚动效果</title>
+    
+    <link rel="stylesheet" href="./css/light7.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_606243_jvh12n316qsvpldi.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/taxes.css">
+</head>
+
+<body>
+    <!-- page 容器 -->
+    <div class="page" id="homePage">
+        
+        <!-- 这里是页面内容区 -->
+        <div class="content" id="contentBox">
+            <div class="placeholder-header"></div>
+            <nav class="nav-fixed" id="navFixed" scroll="0">
+                <ul class="nav-ul content" id="navUl">
+                    <li v-for="(index,item) in navList" :class="{'active': item.key}">
+                        {{item.val}}
+                    </li>
+                </ul>
+            </nav>
+            <div class="content-block tax-content">
+                <div class="content-scroll">
+                    <div class="search">
+                        <div class="search-icon">
+                            <i class="iconfont icon-saomiao"></i>
+                        </div>
+                        <div class="search-input">
+                            <input type="text" placeholder="请输入您需要搜索的功能">
+                            <i class="iconfont icon-tubiao11"></i>
+                        </div>
+                    </div>
+
+                    <div class="menu-box">
+                        <div class="menu-wrap">
+                            <div class="menu-item personal-tax">
+                                <h4>
+                                    <span>个</span>人所得税</h4>
+                                <ul class="item-ul">
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_1.png" alt="">
+                                            <span>个人所得税查询</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_2.png" alt="">
+                                            <span>自行申报A表无扣款义务人</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_3.png" alt="">
+                                            <span>自行申报A表两处以上所得</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_4.png" alt="">
+                                            <span>自行申报B表境外所得</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_5.png" alt="">
+                                            <span>年所得12万以上</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_6.png" alt="">
+                                            <span>生产经营A表月季</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_7.png" alt="">
+                                            <span>生产经营B表年度</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_8.png" alt="">
+                                            <span>生产经营C表两个或以上</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_9.png" alt="">
+                                            <span>完税证明邮寄</span>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>
+                                    <span>社</span>保费</h4>
+                                <ul class="item-ul">
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_10.png" alt="">
+                                            <span>社保费查询</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_11.png" alt="">
+                                            <span>社保业务</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_12.png" alt="">
+                                            <span>托收单清缴</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_13.png" alt="">
+                                            <span>缴费登记</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>
+                                    <span>车</span>船税</h4>
+                                <ul class="item-ul">
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_14.png" alt="">
+                                            <span>车船税查询</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_15.png" alt="">
+                                            <span>车船税缴款</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>
+                                    <span>房</span>产交易</h4>
+                                <ul class="item-ul">
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_16.png" alt="">
+                                            <span>契税查询</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_17.png" alt="">
+                                            <span>房产税交易智能办税</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_18.png" alt="">
+                                            <span>二手房交易</span>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>
+                                    <span>缴</span>款</h4>
+                                <ul class="item-ul">
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_19.png" alt="">
+                                            <span>税费缴款</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_20.png" alt="">
+                                            <span>申报作废</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>
+                                    <span>完</span>税证明</h4>
+                                <ul class="item-ul">
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_21.png" alt="">
+                                            <span>电子税票</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_22.png" alt="">
+                                            <span>证明查验</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_23.png" alt="">
+                                            <span>文书查验</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_24.png" alt="">
+                                            <span>个人完税查验</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>
+                                    <span>住</span>房公积金</h4>
+                                <ul class="item-ul">
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_21.png" alt="">
+                                            <span>总额查询</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_22.png" alt="">
+                                            <span>明细查询</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_23.png" alt="">
+                                            <span>提取申请</span>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>
+                                    <span>医</span>疗</h4>
+                                <ul class="item-ul">
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_21.png" alt="">
+                                            <span>问医生</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_22.png" alt="">
+                                            <span>智能预诊</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_23.png" alt="">
+                                            <span>体检预约</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_23.png" alt="">
+                                            <span>儿科诊所</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                    <h4>
+                                        <span>交</span>通</h4>
+                                    <ul class="item-ul">
+                                        <li>
+                                            <div>
+                                                <img src="./images/taxes/tax_19.png" alt="">
+                                                <span>地铁购票</span>
+                                            </div>
+                                            <div>
+                                                <img src="./images/taxes/tax_20.png" alt="">
+                                                <span>羊城通乘车码</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>
+                                    <span>政</span>务</h4>
+                                <ul class="item-ul">
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_21.png" alt="">
+                                            <span>港澳台签证办理</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_22.png" alt="">
+                                            <span>12315</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_23.png" alt="">
+                                            <span>法律服务</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_24.png" alt="">
+                                            <span>广州来穗通</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>
+                                    <span>综</span>合应用</h4>
+                                <ul class="item-ul">
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_21.png" alt="">
+                                            <span>证件照拍照</span>
+                                        </div>
+                                        <div>
+                                            <img src="./images/taxes/tax_22.png" alt="">
+                                            <span>司法拍卖</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./images/taxes/tax_23.png" alt="">
+                                            <span>境外游</span>
+                                        </div>
+                                        <div>
+                            
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/light7.min.js"></script>
+    <script src="./js/bscroll.min.js"></script>
+    <script src="./js/vue.min.js"></script>
+    <script src="./taxes.js"></script>
+</body>
+
+</html>
