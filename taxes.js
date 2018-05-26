@@ -12,7 +12,7 @@ $(function () {
                     {key: false, val:'完税证明'},
                     {key: false, val: '住房公积金'},
                     {key: false, val: '医疗'},
-                    {key: false, val: '交通'},
+                    {key: false, val: '交通情况'},
                     {key: false, val: '政务'},
                     {key: false, val:'综合应用'},
                 ],
