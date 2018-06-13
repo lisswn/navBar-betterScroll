@@ -126,7 +126,7 @@ $(function () {
                             }
                         }
                         //由于在ios上ul的宽度设置后偏小，一行放不下，所以在ios上多加几个像素
-                        var navUlWidth = confirmOS() == 1 ? (width + 2) : (width + 4);
+                        var navUlWidth = confirmOS() == 1 ? (width + 2) : (width + 5);
                         //创建导航栏水平滚动实例
                         $(options.hosEl).children().css('width', navUlWidth);
                         var wrapper = $(options.hosEl).get(0);
